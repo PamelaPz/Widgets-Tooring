@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tooring/widgets/inputIncrement.dart';
+import 'widgets/buttonAdd.dart';
 import 'widgets/imageFull.dart';
 import 'widgets/comments.dart';
 // import 'widgets/tagsBar.dart';
@@ -21,7 +23,19 @@ class Body extends StatelessWidget {
             ),
             Comments(),
             SizedBox(height: 100),
-            
+            Container(
+              width: size.width,
+              height: size.height * 0.08,
+              margin: EdgeInsets.symmetric(horizontal: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                InputIncrement(),
+                SizedBox(width: 20),
+                ButtonAdd(),
+                ],
+              ),
+            ),
           ],
         ),
       ),
