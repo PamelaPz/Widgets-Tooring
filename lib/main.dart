@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tooring/widgets/detailsAppBar.dart';
 import 'package:tooring/body.dart';
-// import 'package:tooring/widgets/cards.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,12 +15,11 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Tooring'),),
+      appBar: DetailsAppBar(),
       body: Body(),
     );
   }
