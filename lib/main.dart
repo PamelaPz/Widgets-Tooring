@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tooring/detailsOrder.dart';
-import 'package:tooring/home.dart';
 import 'package:tooring/widgets/appBar_icon_text.dart';
-import 'package:tooring/widgets/appBar_img_text.dart';
 
 void main() => runApp(MyApp());
 
