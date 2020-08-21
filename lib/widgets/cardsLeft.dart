@@ -2,8 +2,14 @@ import 'package:flutter/material.dart';
 
 class CardsLeft extends StatelessWidget {
   const CardsLeft({
-    Key key, this.name, this.description, this.stars, this.price, this.image, this.press,
-  }): super(key: key);
+    Key key,
+    this.name,
+    this.description,
+    this.stars,
+    this.price,
+    this.image,
+    this.press,
+  }) : super(key: key);
 
   final String name;
   final String description;
@@ -15,36 +21,40 @@ class CardsLeft extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    return Container(
-      margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-      child: Stack(
-        children: [
-          Positioned(
-            right: 0,
-            child: GestureDetector(
-              onTap: press,
-              child: Container(
-                margin: EdgeInsets.only(top: 15),
-                width: size.width / 1.2,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
-                      spreadRadius: 1,
-                      blurRadius: 6,
-                      offset: Offset(2, 8), // changes position of shadow
-                    ),
-                  ],
-                ),
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(90, 10, 15, 10),
-                  child: Column(
+    return Center(
+      child: Container(
+        // margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+        height: size.height * 0.16,
+        width: size.width,
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            Positioned(
+              right: 0,
+              child: GestureDetector(
+                onTap: press,
+                child: Container(
+                  margin: EdgeInsets.only(top: 6),
+                  width: size.width / 1.2,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.2),
+                        spreadRadius: 1,
+                        blurRadius: 6,
+                        offset: Offset(2, 8), // changes position of shadow
+                      ),
+                    ],
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(90, 10, 15, 10),
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          name, 
+                          name,
                           textAlign: TextAlign.left,
                           style: TextStyle(
                             fontSize: 12,
@@ -69,7 +79,11 @@ class CardsLeft extends StatelessWidget {
                           children: [
                             Row(
                               children: [
-                                Icon(Icons.star, color: Colors.yellow.shade700, size: 16,),
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.yellow.shade700,
+                                  size: 16,
+                                ),
                                 SizedBox(width: 5),
                                 Text(
                                   stars.toString(),
@@ -81,7 +95,7 @@ class CardsLeft extends StatelessWidget {
                               ],
                             ),
                             Text(
-                              '\$ ' +  price.toString() + ' MX',
+                              '\$ ' + price.toString() + ' MX',
                               style: TextStyle(
                                 fontSize: 11,
                                 color: Colors.green.shade800,
@@ -91,18 +105,21 @@ class CardsLeft extends StatelessWidget {
                         )
                       ],
                     ),
+                  ),
                 ),
               ),
             ),
-          ),
-          Container(
-            margin: EdgeInsets.only(right: 220),
-            child: CircleAvatar(
-              radius: 60,
-              backgroundImage: AssetImage(image),
-            ),
-          ),
-        ],
+            Positioned(
+              left: 0,
+              child: Container(
+                child: CircleAvatar(
+                  radius: 60,
+                  backgroundImage: AssetImage(image),
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
