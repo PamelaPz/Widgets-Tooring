@@ -42,7 +42,7 @@ class CardOrder extends StatelessWidget {
                         color: Colors.grey.withOpacity(0.2),
                         spreadRadius: 1,
                         blurRadius: 6,
-                        offset: Offset(2, 6), // changes position of shadow
+                        offset: Offset(2, 6),
                       ),
                     ],
                   ),
@@ -60,22 +60,22 @@ class CardOrder extends StatelessWidget {
                         ),
                         SizedBox(height: 5),
                         Container(
-                            height: 38.5,
-                            child: RichText(
-                              text: new TextSpan(
-                                style: new TextStyle(
-                                  fontSize: 11,
-                                  color: Colors.grey,
-                                ),
-                                children: <TextSpan>[
-                                  new TextSpan(
-                                      text: 'Dirección',
-                                      style: new TextStyle(
-                                          fontWeight: FontWeight.bold)),
-                                  new TextSpan(text: address),
-                                ],
+                          height: 38.5,
+                          child: RichText(
+                            text: new TextSpan(
+                              style: new TextStyle(
+                                fontSize: 11,
+                                color: Colors.grey,
                               ),
-                            )),
+                              children: <TextSpan>[
+                                new TextSpan(
+                                    text: 'Dirección: ',
+                                    style: new TextStyle(
+                                        fontWeight: FontWeight.bold)),
+                                new TextSpan(text: address),
+                              ],
+                            ),
+                        )),
                         SizedBox(height: 8),
                         Text(
                           codeOrder.toString(),

@@ -71,7 +71,7 @@ class CardOrderLeft extends StatelessWidget {
                                 ),
                                 children: <TextSpan>[
                                   new TextSpan(
-                                      text: 'Dirección',
+                                      text: 'Dirección: ',
                                       style: new TextStyle(
                                           fontWeight: FontWeight.bold)),
                                   new TextSpan(text: address),

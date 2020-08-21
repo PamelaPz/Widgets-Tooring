@@ -10,6 +10,13 @@ class Order extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
+            CardOrderLeft(
+              codeOrder: 12499,
+              address:
+                  "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
+              image: "assets/images/avatar.png",
+              nameUser: "Nombre de Usuario",
+            ),
             CardOrder(
               codeOrder: 12498,
               address:
