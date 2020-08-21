@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tooring/widgets/inputIncrement.dart';
-import 'widgets/buttonAdd.dart';
-import 'widgets/imageFull.dart';
-import 'widgets/comments.dart';
+import 'package:tooring/widgets/Product_Details/inputIncrement.dart';
+import 'widgets/Product_Details/buttonAdd.dart';
+import 'widgets/Product_Details/imageFull.dart';
+import 'widgets/Product_Details/comments.dart';
 // import 'widgets/tagsBar.dart';
 // import 'widgets/cards.dart';
 // import 'widgets/cardsLeft.dart';

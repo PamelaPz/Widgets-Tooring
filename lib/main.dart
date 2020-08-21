@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tooring/widgets/detailsAppBar.dart';
-import 'package:tooring/body.dart';
+import 'package:tooring/widgets/appBar_icon_text.dart';
+import 'package:tooring/widgets/appBar_img_text.dart';
+// import 'package:tooring/body.dart';
+
+import 'order.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,8 +22,8 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: DetailsAppBar(),
-      body: Body(),
+      appBar: AppBarImgText(title: "Pedidos en cola", image: "assets/images/avatar.png",),
+      body: Order(),
     );
   }
 }
