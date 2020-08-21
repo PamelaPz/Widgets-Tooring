@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tooring/widgets/cardsLeft.dart';
-import 'widgets/tagsBar.dart';
-import 'widgets/cards.dart';
-import 'widgets/searchBar.dart';
+import 'widgets/Home/cardsLeft.dart';
+import 'widgets/Home/tagsBar.dart';
+import 'widgets/Home/cards.dart';
+import 'widgets/Home/searchBar.dart';
 
 class Home extends StatelessWidget {
   @override
