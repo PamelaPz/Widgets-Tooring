@@ -3,6 +3,7 @@ import 'widgets/Orders/cardFood.dart';
 import 'widgets/Orders/cardFoodLeft.dart';
 import 'widgets/Orders/total.dart';
 import 'widgets/Orders/userDataHeader.dart';
+import 'widgets/Product_Details/groupRadio.dart';
 
 class DetailsOrder extends StatelessWidget {
   @override
@@ -42,7 +43,10 @@ class DetailsOrder extends StatelessWidget {
                       image: "assets/images/pizza.jpg",
                       price: 200,
                     ),
-                    Divider(color: Colors.grey, height: 2,),
+                    Divider(
+                      color: Colors.grey,
+                      height: 2,
+                    ),
                     CardFoodLeft(
                       name: "Nombre del platillo",
                       comments:
@@ -50,7 +54,10 @@ class DetailsOrder extends StatelessWidget {
                       image: "assets/images/pizza.jpg",
                       price: 200,
                     ),
-                    Divider(color: Colors.grey, height: 2,),
+                    Divider(
+                      color: Colors.grey,
+                      height: 2,
+                    ),
                     CardFood(
                       name: "Nombre del platillo",
                       comments:
@@ -58,7 +65,10 @@ class DetailsOrder extends StatelessWidget {
                       image: "assets/images/pizza.jpg",
                       price: 200,
                     ),
-                    Divider(color: Colors.grey, height: 2,),
+                    Divider(
+                      color: Colors.grey,
+                      height: 2,
+                    ),
                     CardFoodLeft(
                       name: "Nombre del platillo",
                       comments:
@@ -70,45 +80,10 @@ class DetailsOrder extends StatelessWidget {
                 ),
               ),
             ),
-            Total(total: 799.99,),
-            Container(
-              margin: EdgeInsets.all(10),
-              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Column(
-                children: [
-                  Text("Forma de Pago"),
-                  Container(
-                    child: Column(
-                      children: [
-                        Container(
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("Tarjeta de débito / crédito"),
-                              Icon(Icons.check_circle),
-                            ],
-                          ),
-                        ),
-                        Divider(height: 2, color: Colors.grey,),
-                        Container(
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("Efectivo"),
-                              Icon(Icons.check_circle),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  )
-                ],
-              ),
+            Total(
+              total: 799.99,
             ),
+            GroupRadio(),
           ],
         ),
       ),
