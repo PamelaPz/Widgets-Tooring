@@ -93,36 +93,34 @@ class DetailsOrder extends StatelessWidget {
                   Container(
                     width: size.width / 2.5,
                     child: RaisedButton(
-                    onPressed: () {},
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18.0),
-                      side: BorderSide(color: Colors.green.shade800)
-                    ),
-                    color: Colors.green.shade800,
-                    child: Text(
-                      'Iniciar', 
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white
+                      onPressed: () {},
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
                       ),
-                    )),
+                      color: Colors.green.shade800,
+                      child: Text(
+                        'Iniciar', 
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.white
+                        ),
+                      )),
                   ),
                   Container(
                     width: size.width / 2.5,
                     child: RaisedButton(
-                    onPressed: () {},
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18.0),
-                      side: BorderSide(color: Colors.red)
-                    ),
-                    color: Colors.red,
-                    child: Text(
-                      'Finalizar', 
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white
+                      onPressed: null,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
                       ),
-                    )),
+                      color: Colors.red,
+                      child: Text(
+                        'Finalizar', 
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.white
+                        ),
+                      )),
                   )
                 ],
               )
