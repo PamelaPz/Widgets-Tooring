@@ -84,6 +84,49 @@ class DetailsOrder extends StatelessWidget {
               total: 799.99,
             ),
             GroupRadio(),
+            Container(
+              margin: EdgeInsets.all(10),
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    width: size.width / 2.5,
+                    child: RaisedButton(
+                    onPressed: () {},
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                      side: BorderSide(color: Colors.green.shade800)
+                    ),
+                    color: Colors.green.shade800,
+                    child: Text(
+                      'Iniciar', 
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white
+                      ),
+                    )),
+                  ),
+                  Container(
+                    width: size.width / 2.5,
+                    child: RaisedButton(
+                    onPressed: () {},
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                      side: BorderSide(color: Colors.red)
+                    ),
+                    color: Colors.red,
+                    child: Text(
+                      'Finalizar', 
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white
+                      ),
+                    )),
+                  )
+                ],
+              )
+            )
           ],
         ),
       ),
