@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'widgets/Categories/categoriesFull.dart';
 import 'widgets/Home/searchBar.dart';
-import 'widgets/Categories/listCategory.dart';
 
 class Categories extends StatelessWidget {
   @override
@@ -14,7 +14,7 @@ class Categories extends StatelessWidget {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: Text(
-                "Ensaladas",
+                "Categorías",
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -26,29 +26,21 @@ class Categories extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    ListCategory(
-                      nameUser: "Nombre del platillo",
-                      price: 200,
-                      address:
-                          "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
-                      image: "assets/images/pizza.jpg",
-                      starts: 4.7,
+                    CategoriesFull(
+                      name: "Ensaladas",
+                      image: "assets/images/ensalada.jpg",
                     ),
-                    ListCategory(
-                      nameUser: "Nombre del platillo",
-                      price: 200,
-                      address:
-                          "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
-                      image: "assets/images/pizza.jpg",
-                      starts: 4.7,
+                    CategoriesFull(
+                      name: "Pastas",
+                      image: "assets/images/pasta.jpeg",
                     ),
-                    ListCategory(
-                      nameUser: "Nombre del platillo",
-                      price: 200,
-                      address:
-                          "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
+                    CategoriesFull(
+                      name: "Hamburguesas",
+                      image: "assets/images/hamburguesa.jpg",
+                    ),
+                    CategoriesFull(
+                      name: "Pizas",
                       image: "assets/images/pizza.jpg",
-                      starts: 4.7,
                     ),
                   ],
                 ),
