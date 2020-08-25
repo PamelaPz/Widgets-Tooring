@@ -6,7 +6,7 @@ class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: SingleChildScrollView(
+      child: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -21,25 +21,66 @@ class Categories extends StatelessWidget {
                 ),
               ),
             ),
-            ListCategory(
-              nameUser: "Nombre del platillo",
-              price: 200,
-              address:
-                  "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
-              image: "assets/images/pizza.jpg",
-              starts: 4.7,
-            ),
-            ListCategory(
-              nameUser: "Nombre del platillo",
-              price: 200,
-              address:
-                  "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
-              image: "assets/images/pizza.jpg",
-              starts: 4.7,
-            ),
-          ],
-        ),
-      ),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ListCategory(
+                      nameUser: "Nombre del platillo",
+                      price: 200,
+                      address:
+                          "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
+                      image: "assets/images/pizza.jpg",
+                      starts: 4.7,
+                    ),
+                    ListCategory(
+                      nameUser: "Nombre del platillo",
+                      price: 200,
+                      address:
+                          "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
+                      image: "assets/images/pizza.jpg",
+                      starts: 4.7,
+                    ),
+                    ListCategory(
+                      nameUser: "Nombre del platillo",
+                      price: 200,
+                      address:
+                          "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
+                      image: "assets/images/pizza.jpg",
+                      starts: 4.7,
+                    ),
+                    ListCategory(
+                      nameUser: "Nombre del platillo",
+                      price: 200,
+                      address:
+                          "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
+                      image: "assets/images/pizza.jpg",
+                      starts: 4.7,
+                    ),
+                    ListCategory(
+                      nameUser: "Nombre del platillo",
+                      price: 200,
+                      address:
+                          "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
+                      image: "assets/images/pizza.jpg",
+                      starts: 4.7,
+                    ),
+                    ListCategory(
+                      nameUser: "Nombre del platillo",
+                      price: 200,
+                      address:
+                          "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
+                      image: "assets/images/pizza.jpg",
+                      starts: 4.7,
+                    ),
+                  ],
+                ),
+              ),
+            )
+           ],
+         )
+      )
     );
   }
 }
