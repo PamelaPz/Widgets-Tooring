@@ -50,30 +50,6 @@ class Categories extends StatelessWidget {
                       image: "assets/images/pizza.jpg",
                       starts: 4.7,
                     ),
-                    ListCategory(
-                      nameUser: "Nombre del platillo",
-                      price: 200,
-                      address:
-                          "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
-                      image: "assets/images/pizza.jpg",
-                      starts: 4.7,
-                    ),
-                    ListCategory(
-                      nameUser: "Nombre del platillo",
-                      price: 200,
-                      address:
-                          "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
-                      image: "assets/images/pizza.jpg",
-                      starts: 4.7,
-                    ),
-                    ListCategory(
-                      nameUser: "Nombre del platillo",
-                      price: 200,
-                      address:
-                          "Lorem ipsum dolor sit amet. Quisque mollis maximus interdum.",
-                      image: "assets/images/pizza.jpg",
-                      starts: 4.7,
-                    ),
                   ],
                 ),
               ),
